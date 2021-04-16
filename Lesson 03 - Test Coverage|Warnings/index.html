@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Test Coverage & Warnings</title>
+</head>
+<body>
+    <div class="wrapper d-flex flex-column">
+        <div class="main d-flex flex-grow-1">
+            <div class="content">
+                <nav class="navbar navbar-light bg-light shadow-sm">
+                    <a class="navbar-brand text-uppercase" href="#">Test Coverage & Warnings</a>
+                </nav>
+                <div class="container-fluid py-2">
+                    <div class="shadow-lg p-5 mb-5 bg-white rounded">
+                        <h2>Test Coverage & Warnings</h2>
+                        <hr>
+                        <p>
+                            In this section, I learnt how to test add test coverage using istanbul. Istanbul is a JavaScript library for creating test coverage and is installed via the command <em><code>npm install --save-dev nyc</code></em>. 
+                        </p>
+                        <hr>
+                        <section>                                    
+                            <h5><b>Cofiguring istanbul</b></h5>
+                            <p>
+                                Here, we create a script in our <em><code>package.json</code></em> file. In the script we pass a reporter and the script istanbul will run to generate coverage reports for.
+                            </p>
+                            <div class="p-3 my-3 bg-light">
+                                <pre class="text" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&quot;scripts&quot;: {</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    &quot;test&quot;: &quot;cross-env NODE_ENV=development mocha 'test/**/*.spec.js' --exit&quot;,</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    &quot;test-app&quot;: &quot;cross-env NODE_ENV=development mocha 'test/specs/app.spec.js' --exit&quot;,</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    &quot;coverage&quot;: &quot;cross-env NODE_ENV=development nyc --reporter=text npm test&quot;</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"> }</div></li></ol></pre>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h5><b>Run Coverage</b></h5>
+                            <p>
+                                To run the coverage report above, enter the command:
+                            </p>
+                            <div class="p-3 my-3 bg-light">
+                                <pre class="text" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">npm run coverage</div></li></ol></pre>
+                            </div>
+                        </section>
+
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div class="p-2"><a class="btn btn-outline-primary btn-sm" href="/Lesson 02 - Testing App" role="button">&lt;&lt; Back</a></div>
+                            <div class="p-2"><a class="btn btn-outline-success btn-sm disabled" href="#" role="button">End</a></div>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="sidebar p-4">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="/">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Lesson 01 - Basics">Basics of Testing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Lesson 02 - Testing App">Testing an App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="/Lesson 03 - Test Coverage|Warnings">Test Coverage & Warnings</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

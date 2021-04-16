@@ -1,0 +1,30 @@
+{
+  "name": "unittesting",
+  "version": "1.0.0",
+  "description": "Sample app for unit testing lessons",
+  "main": "app.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development mocha 'test/**/*.spec.js' --exit",
+    "test-app": "cross-env NODE_ENV=development mocha 'test/specs/app.spec.js' --exit",
+    "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
+  },
+  "author": "Peter Kitonga",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0",
+    "rewire": "^5.0.0",
+    "sinon": "^10.0.1",
+    "sinon-chai": "^3.6.0",
+    "supertest": "^6.1.3"
+  }
+}
